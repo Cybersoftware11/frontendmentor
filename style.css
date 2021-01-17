@@ -1,0 +1,171 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+/* font-family: 'Poppins', sans-serif;*/
+
+:root {
+ --Red: hsl(0, 78%, 62%);
+ --Cyan: hsl(180, 62%, 55%);
+ --Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+
+}
+
+body {
+
+    background-color: rgb(241, 247, 247);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 70%;
+    background-color: rgb(241, 247, 247);
+}
+
+h1 {
+
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+.card1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;   
+}
+
+
+
+.card1 p {
+    font-size: .9rem;
+    font-weight: 200;
+}
+
+.card1 span {
+    font-weight: 100;
+    font-weight: lighter;
+}
+
+.card {
+-webkit-box-shadow: 5px 5px 15px 5px #000000; 
+box-shadow: 5px 5px 15px 5px #000000;
+border-radius: 12px;   
+height: 13em;
+width: 20em;
+border: 1px black solid;
+padding: 1em;
+margin: 0 auto;
+margin-top: 2em;
+
+}
+
+.card h2 {
+    margin: 0;
+    padding: 0;
+    }
+
+
+.card p {
+    font-size: .8rem;
+    font-weight: 200;
+}
+
+.card.cyan {
+    border-top: 3px var(--Cyan) solid;
+}
+
+.card.red {
+    border-top: 3px var(--Red) solid;
+}
+
+.card.orange {
+    border-top: 3px var(--Orange) solid;
+}
+
+.card.blue {
+    border-top: 3px var(--Blue) solid;
+}
+
+
+.icon {
+ float: right;
+}
+
+
+@media only screen and (min-width: 768px) {
+  
+.card1 h1  p {
+text-align: center;
+}
+
+.card1 {
+width: 50%;
+margin: 0 auto;
+}        
+
+.cardwrap {
+display: flex;
+
+align-items: center;
+}
+
+.card {
+width: 95%;
+}
+
+.one {
+  flex: 1; /*flex is 1 1 0 */
+}
+
+
+.two {
+ flex: 1;  /*flex is 1 1 0 */
+
+}
+
+
+  } /* end of media query*/
+
+/*
+  .card {
+    width: 100%;
+}
+  
+.one {
+
+    flex: 1;
+}
+.two {
+
+    flex: 1;
+}
+
+.card {
+
+-webkit-box-shadow: 5px 5px 15px 5px #000000; 
+box-shadow: 5px 5px 15px 5px #000000;
+border-radius: 12px;   
+height: 13em;
+width: 50vw;
+border: 1px black solid;
+padding: 1em;
+margin: 0 auto;
+margin-top: 2em;
+border-top: 3px var(--Red) solid;
+
+}
+flex: 0 1 calc(33% - 1rem);
+
+
+
+
+*/
